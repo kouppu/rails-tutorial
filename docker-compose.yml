@@ -13,7 +13,7 @@ services:
       - ./docker/db/config/:/etc/mysql/conf.d
       - ./logs/mysql:/var/log/mysql
 
-  web:
+  app:
     container_name: rails_tutorial_app
     build:
       context: .
